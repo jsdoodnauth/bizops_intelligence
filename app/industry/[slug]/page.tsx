@@ -48,16 +48,6 @@ const industryInfo = {
   },
 };
 
-export async function generateStaticParams() {
-  return [
-    { slug: 'pharmacy' },
-    { slug: 'smallBusiness' },
-    { slug: 'teachers' },
-    { slug: 'automation' },
-    { slug: 'realtors' },
-  ];
-}
-
 export default async function IndustryPage({ params }: IndustryPageProps) {
   const posts = await getPostsByIndustry(params.slug);
   const industry = industryInfo[params.slug as keyof typeof industryInfo];
