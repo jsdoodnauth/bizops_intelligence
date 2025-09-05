@@ -88,6 +88,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Features Section */}
+      <section className="py-20 bg-white/50 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-slate-900 mb-12">
+              Why Choose BizOps Intelligence?
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-3 rounded-xl w-fit mx-auto mb-4">
+                  <TrendingUp className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">High-Potential Opportunities</h3>
+                <p className="text-slate-600">Discover business ideas ranked by uniqueness scores and community engagement.</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-3 rounded-xl w-fit mx-auto mb-4">
+                  <Users className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Targeted Audience Insights</h3>
+                <p className="text-slate-600">Understand your potential customers and market segments with detailed audience analysis.</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-3 rounded-xl w-fit mx-auto mb-4">
+                  <Cog className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Actionable Enhancements</h3>
+                <p className="text-slate-600">Get specific, implementable business enhancement strategies and product development ideas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Industries Grid */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -140,40 +174,6 @@ export default function Home() {
                 </Link>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-20 bg-white/50 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-12">
-              Why Choose BizOps Intelligence?
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-3 rounded-xl w-fit mx-auto mb-4">
-                  <TrendingUp className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">High-Potential Opportunities</h3>
-                <p className="text-slate-600">Discover business ideas ranked by uniqueness scores and community engagement.</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-3 rounded-xl w-fit mx-auto mb-4">
-                  <Users className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Targeted Audience Insights</h3>
-                <p className="text-slate-600">Understand your potential customers and market segments with detailed audience analysis.</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-3 rounded-xl w-fit mx-auto mb-4">
-                  <Cog className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Actionable Enhancements</h3>
-                <p className="text-slate-600">Get specific, implementable business enhancement strategies and product development ideas.</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
