@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, TrendingUp, Users, Cog, GraduationCap, Pill, House, Utensils } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, Cog, GraduationCap, Pill, House, Utensils, Wrench } from 'lucide-react';
 
 const industries = [
   {
@@ -55,6 +55,15 @@ const industries = [
     gradient: 'from-yellow-400 to-lime-500',
     bgGradient: 'from-yellow-50 to-lime-50',
     stats: 'Food & Hospitality',
+  },
+  {
+    name: 'DIY',
+    slug: 'diy',
+    description: 'Creative projects, hands-on building, and do-it-yourself innovation opportunities',
+    icon: Wrench,
+    gradient: 'from-teal-400 to-orange-500',
+    bgGradient: 'from-teal-50 to-orange-50',
+    stats: 'Creativity & Making',
   },
 ];
 
