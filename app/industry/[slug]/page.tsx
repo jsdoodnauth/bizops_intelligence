@@ -46,6 +46,12 @@ const industryInfo = {
     gradient: 'from-red-400 to-green-500',
     bgGradient: 'from-red-50 to-green-50',
   },
+  diy: {
+    name: 'DIY',
+    description: 'Creative projects, hands-on building, and do-it-yourself innovation opportunities',
+    gradient: 'from-teal-400 to-orange-500',
+    bgGradient: 'from-teal-50 to-orange-50',
+  },
 };
 
 export default async function IndustryPage({ params }: IndustryPageProps) {

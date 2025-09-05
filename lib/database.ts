@@ -39,6 +39,12 @@ export interface PostData {
 export async function getPostsByIndustry(industry: string): Promise<PostData[]> {
   try {
     const connection = await getConnection();
+    if (industry.toLowerCase() === 'diy') {
+      const [rows] = await connection.execute(
+        `SELECT * FROM redditinsights WHERE workflow = 'DIY' OR workflow = 'HomeImprovement' ORDER BY upvotes DESC, uniqueness_score DESC`
+      );
+      return rows as PostData[];
+    }
     const [rows] = await connection.execute(
       `SELECT * FROM ${industry} ORDER BY upvotes DESC, uniqueness_score DESC`
     );
@@ -52,6 +58,15 @@ export async function getPostsByIndustry(industry: string): Promise<PostData[]> 
 export async function getPostById(industry: string, id: number): Promise<PostData | null> {
   try {
     const connection = await getConnection();
+    
+    if (industry.toLowerCase() === 'diy') {
+      const [rows] = await connection.execute(
+        `SELECT * FROM redditinsights WHERE id = ?`,
+        [id]
+      );
+      const results = rows as PostData[];
+      return results.length > 0 ? results[0] : null;
+    }
     const [rows] = await connection.execute(
       `SELECT * FROM ${industry} WHERE id = ?`,
       [id]
