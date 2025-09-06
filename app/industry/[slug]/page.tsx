@@ -52,6 +52,12 @@ const industryInfo = {
     gradient: 'from-teal-400 to-orange-500',
     bgGradient: 'from-teal-50 to-orange-50',
   },
+  banking: {
+    name: 'Banking and Finance',
+    description: 'Financial services, investment opportunities, and innovations in banking solutions',
+    gradient: 'from-blue-400 to-amber-500',
+    bgGradient: 'from-blue-50 to-amber-50',
+  },
 };
 
 export default async function IndustryPage({ params }: IndustryPageProps) {
